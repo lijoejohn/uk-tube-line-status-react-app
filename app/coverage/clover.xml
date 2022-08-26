@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1661359424976" clover="3.2.0">
+  <project timestamp="1661359424977" name="All files">
+    <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="15" coveredelements="10" complexity="0" loc="12" ncloc="12" packages="1" files="3" classes="3"/>
+    <file name="App.tsx" path="D:\code-base\tfl-takehome\src\App.tsx">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+    <file name="main.tsx" path="D:\code-base\tfl-takehome\src\main.tsx">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="0" type="stmt"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+    </file>
+    <file name="vite-env.d.ts" path="D:\code-base\tfl-takehome\src\vite-env.d.ts">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+    </file>
+  </project>
+</coverage>
