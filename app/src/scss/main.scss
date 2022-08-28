@@ -14,7 +14,12 @@ body {
   padding: 0;
   border: 0;
 }
-button {
+.error-heading {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 70px;
+}
+.button-elm {
   width: 100%;
   cursor: pointer;
   background-color: govuk-colour('white');
@@ -28,7 +33,7 @@ button {
   border-bottom: 1px solid $govuk-border-colour;
   .color-cod {
     display: inline-block;
-    width: 20px;
+    width: 10px;
     height: 100%;
   }
   .tube-name {
@@ -99,12 +104,13 @@ button {
 
   .tube-list-wrapper {
     div {
-      &:first-child {
+      &:nth-child(odd) {
         ul {
           margin-right: 2rem;
         }
       }
       ul {
+        margin-bottom: 2rem;
         border: 1px solid $govuk-border-colour;
       }
     }

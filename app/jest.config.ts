@@ -1,5 +1,6 @@
-export default exports = {
+export default {
   collectCoverage: false,
+  resetMocks: false,
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',

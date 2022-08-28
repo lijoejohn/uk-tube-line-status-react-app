@@ -14,7 +14,8 @@ export default defineConfig(({ mode }) => {
     },
     // vite config
     define: {
-      __APP_ENV__: env.APP_ENV
+      __APP_ENV__: env.APP_ENV,
+      'process.env': JSON.stringify(env)
     },
     plugins: [react()],
     server: {

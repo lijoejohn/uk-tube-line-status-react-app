@@ -26,6 +26,11 @@
     "func-names": 0,
     // suppress errors for missing 'import React' in files
     "react/react-in-jsx-scope": "off",
+    "react/require-default-props": [0],
+    "react/state-in-constructor": [0],
+    "react/jsx-props-no-spreading": [0],
+    "react/button-has-type": [0],
+    "react/no-array-index-key": [0],
     // allow jsx syntax in js files (for next.js project)
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
   },
