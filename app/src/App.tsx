@@ -1,15 +1,13 @@
-import { ErrorBoundary } from 'react-error-boundary';
-
 import './scss/main.scss';
-import ErrorPage from './components/ErrorPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TubeStatusList from './pages/tubeStatus';
 import { DOM_ELEMENT_IDS } from './constans';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App(): JSX.Element {
   return (
-    <ErrorBoundary fallback={<ErrorPage />}>
+    <ErrorBoundary>
       <Header />
       <div className="govuk-!-margin-left-9 govuk-!-margin-right-9">
         <main

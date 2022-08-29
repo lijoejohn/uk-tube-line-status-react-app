@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
-import TubeList from './tubeList';
+import TubeDetails from './tubeDetails';
 import useFetch from '../../services/fetch';
 import { parseData, getChunks } from '../../services/helper';
 import { SingleLineStatus } from '../../Interface/tubeStatus';
 import { DOM_ELEMENT_IDS, LABELS, NO_OF_LIST_ITEM_IN_CARD } from '../../constans';
+
+import './style.scss';
 
 function TubeStatusList(): JSX.Element {
   const [result, setResult] = useState<SingleLineStatus[][]>();
@@ -15,8 +17,11 @@ function TubeStatusList(): JSX.Element {
 
   useEffect(() => {
     if (isLoading === false && apiData) {
-      const res = getChunks(parseData(apiData), NO_OF_LIST_ITEM_IN_CARD);
-      setResult(res);
+      /* 
+      parsing the api data with helper function and split it in to chunks
+      */
+      const response = getChunks(parseData(apiData), NO_OF_LIST_ITEM_IN_CARD);
+      setResult(response);
     }
   }, [apiData]);
 
@@ -34,6 +39,9 @@ function TubeStatusList(): JSX.Element {
           data-testid={DOM_ELEMENT_IDS.tube_list_wrapper}
           id={DOM_ELEMENT_IDS.tube_list_wrapper}>
           {result?.length ? (
+            /*
+            first level iteration with array of chunks
+            */
             result.map((subSet, index) => {
               return (
                 <div key={`key-${index}`} className="govuk-grid-column-one-half">
@@ -41,17 +49,22 @@ function TubeStatusList(): JSX.Element {
                     data-testid={DOM_ELEMENT_IDS.tube_list_block}
                     id={`${DOM_ELEMENT_IDS.tube_list_block}-${index}`}
                     className="tube-list">
-                    {subSet.map((item) => {
-                      return (
-                        <li
-                          key={item.id}
-                          data-testid={`${DOM_ELEMENT_IDS.tube_list_row}-${item.id}`}
-                          id={`${DOM_ELEMENT_IDS.tube_list_row}-${item.id}`}
-                          aria-level={2}>
-                          <TubeList data={item} />
-                        </li>
-                      );
-                    })}
+                    {
+                      /*
+                      second level iteration with results in each chunks of array
+                      */
+                      subSet.map((item) => {
+                        return (
+                          <li
+                            key={item.id}
+                            data-testid={`${DOM_ELEMENT_IDS.tube_list_row}-${item.id}`}
+                            id={`${DOM_ELEMENT_IDS.tube_list_row}-${item.id}`}
+                            aria-level={2}>
+                            <TubeDetails data={item} />
+                          </li>
+                        );
+                      })
+                    }
                   </ul>
                 </div>
               );

@@ -1,6 +1,4 @@
 @import 'node_modules/govuk-frontend/govuk/all';
-$small: 640px;
-
 body {
   font-family: 'GDS Transport', arial, sans-serif;
 }
@@ -19,103 +17,7 @@ body {
   vertical-align: middle;
   margin-top: 70px;
 }
-.button-elm {
-  width: 100%;
-  cursor: pointer;
-  background-color: govuk-colour('white');
-  border: none;
-  height: 40px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  border-bottom: 1px solid $govuk-border-colour;
-  .color-cod {
-    display: inline-block;
-    width: 10px;
-    height: 100%;
-  }
-  .tube-name {
-    margin-left: 10px;
-  }
-  &:hover,
-  &:focus,
-  &:visited,
-  &:active {
-    background-color: govuk-colour('light-grey');
-    outline: none;
-  }
-  svg {
-    display: flex;
-    margin-left: auto;
-    margin-right: 5px;
-  }
-}
-.expanded-content {
-  padding: 10px;
-  background-color: govuk-colour('light-grey');
-}
-.tube-list-wrapper {
-  div {
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        position: relative;
-        opacity: 1;
-        vertical-align: middle;
-      }
-      border-right: 1px solid $govuk-border-colour;
-      border-left: 1px solid $govuk-border-colour;
-    }
-    &:first-child {
-      ul {
-        border-top: 1px solid $govuk-border-colour;
-      }
-    }
-    &:last-child {
-      ul {
-        border-bottom: 1px solid $govuk-border-colour;
-        li {
-          &:last-child {
-            button {
-              border: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: $small) {
-  ul {
-    li {
-      &:last-child {
-        button {
-          border-bottom: none;
-        }
-      }
-    }
-  }
 
-  .tube-list-wrapper {
-    div {
-      &:nth-child(odd) {
-        ul {
-          margin-right: 2rem;
-        }
-      }
-      ul {
-        margin-bottom: 2rem;
-        border: 1px solid $govuk-border-colour;
-      }
-    }
-  }
-}
 .govuk-grid-row {
   margin: 0;
 }
@@ -142,64 +44,6 @@ a {
   &:active {
     color: $govuk-link-active-colour;
   }
-}
-
-.color-red {
-  color: govuk-colour('red');
-}
-.color-yellow {
-  color: govuk-colour('yellow');
-}
-.color-blue {
-  color: govuk-colour('blue');
-}
-.color-dark-blue {
-  color: govuk-colour('dark-blue');
-}
-.color-light-blue {
-  color: govuk-colour('light-blue');
-}
-.color-purple {
-  color: govuk-colour('purple');
-}
-.color-black {
-  color: govuk-colour('black');
-}
-.color-dark-grey {
-  color: govuk-colour('dark-grey');
-}
-.color-mid-grey {
-  color: govuk-colour('mid-grey');
-}
-.color-light-grey {
-  color: govuk-colour('light-grey');
-}
-.color-white {
-  color: govuk-colour('white');
-}
-.color-light-purple {
-  color: govuk-colour('light-purple');
-}
-.color-bright-purple {
-  color: govuk-colour('bright-purple');
-}
-.color-pink {
-  color: govuk-colour('pink');
-}
-.color-light-pink {
-  color: govuk-colour('light-pink');
-}
-.color-orange {
-  color: govuk-colour('orange');
-}
-.color-brown {
-  color: govuk-colour('brown');
-}
-.color-light-green {
-  color: govuk-colour('light-green');
-}
-.color-turquoise {
-  color: govuk-colour('turquoise');
 }
 
 .bg-color-red {

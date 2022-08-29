@@ -457,4 +457,37 @@ const mockData = [
     }
   }
 ];
-export { mockData, SAMPLE_ID, SAMPLE_NAME };
+
+const unProcessedData = [
+  {
+    id: SAMPLE_ID,
+    name: SAMPLE_NAME,
+    lineStatuses: [
+      {
+        lineId: '',
+        statusSeverity: 10,
+        statusSeverityDescription: 'Good Service'
+      }
+    ]
+  }
+];
+const processedData = [
+  {
+    id: SAMPLE_ID,
+    name: SAMPLE_NAME,
+    statusSeverity: 10,
+    lineId: '',
+    statusSeverityDescription: 'Good Service'
+  }
+];
+const processedData1 = [
+  {
+    id: SAMPLE_ID,
+    name: SAMPLE_NAME,
+    statusSeverity: 10,
+    lineId: '',
+    reason: 'reason',
+    statusSeverityDescription: 'Good Service'
+  }
+];
+export { mockData, SAMPLE_ID, SAMPLE_NAME, unProcessedData, processedData, processedData1 };

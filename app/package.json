@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "jest src --silent",
+    "test": "jest src --silent --verbose -u",
+    "test-i": "jest src --verbose -u",
     "coverage": "jest --silent src --coverage",
     "lint": "eslint src ",
     "lint:fix": "eslint src  --fix"
@@ -15,8 +16,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-error-boundary": "^3.1.4"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

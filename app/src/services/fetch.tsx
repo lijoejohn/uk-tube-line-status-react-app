@@ -3,6 +3,10 @@ import axios from 'axios';
 import { useFetchTypes } from '../Interface/tubeStatus';
 import { getUrl } from './helper';
 
+/* fetchData
+a helper function to call api with axios
+fully configurable with method, url and querry params
+*/
 const fetchData = async ({ method, url: endPoint, body }: useFetchTypes) => {
   try {
     const resp = await axios({
@@ -17,6 +21,10 @@ const fetchData = async ({ method, url: endPoint, body }: useFetchTypes) => {
   }
 };
 
+/* useFetch
+a custom react hook to use for api calls
+fully configurable with method, url and querry params
+*/
 const useFetch = ({ method = 'GET', url, body, param }: useFetchTypes) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [apiData, setApiData] = useState<any>();

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Component should match the snapshot 1`] = `
+<svg
+  clipRule="evenodd"
+  fillRule="evenodd"
+  height="24"
+  viewBox="0 0 24 24"
+  width="24"
+>
+  <path />
+</svg>
+`;

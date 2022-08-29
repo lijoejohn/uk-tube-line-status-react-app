@@ -23,7 +23,7 @@ interface Status {
 interface LineStatus {
   name: string;
   id: string;
-  lineStatuses: [Status];
+  lineStatuses: Status[];
 }
 
 interface SingleLineStatus extends Status {

@@ -20,6 +20,7 @@ const DOM_ELEMENT_IDS = {
   tube_list_block: 'tube_list_block',
   tube_list_row: 'tube_list_row',
   tube_list_button: 'tube_list_button',
+  tube_list_button_svg: 'tube_list_button_svg',
   tube_status_details: 'tube_status_details'
 };
 const LABELS = {
@@ -27,8 +28,10 @@ const LABELS = {
   FOOTER_TEXT: 'All content is available under the Sample Licence',
   STATUS_PAGE_HEADING: 'Current status of all tube lines.',
   LOADING_TEXT: 'Loading Data',
-  NO_DATA_FOUND: 'No Data Found.'
+  NO_DATA_FOUND: 'No Data Found.',
+  ERROR_TEXT: 'Something went wrong'
 };
 
 const NO_OF_LIST_ITEM_IN_CARD = 8;
+
 export { TUBE_LINE_COLORCODES, DOM_ELEMENT_IDS, LABELS, NO_OF_LIST_ITEM_IN_CARD };

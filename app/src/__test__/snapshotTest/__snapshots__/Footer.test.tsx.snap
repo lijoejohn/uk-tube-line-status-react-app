@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component should match the snapshot 1`] = `
+<footer
+  className="govuk-footer "
+  role="contentinfo"
+>
+  <div
+    className="govuk-!-margin-left-9 govuk-!-margin-right-9"
+  >
+    <div
+      className="govuk-footer__meta"
+    >
+      <div
+        className="govuk-footer__meta-item govuk-footer__meta-item--grow"
+      >
+        <span
+          className="govuk-footer__licence-description"
+          data-testid="footer_text"
+          id="footer_text"
+        >
+          All content is available under the Sample Licence
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+`;

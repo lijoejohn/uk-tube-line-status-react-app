@@ -1,0 +1,108 @@
+@import 'node_modules/govuk-frontend/govuk/all';
+$small: 640px;
+
+.button-element {
+  width: 100%;
+  cursor: pointer;
+  background-color: govuk-colour('white');
+  border: none;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid $govuk-border-colour;
+  .color-code {
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+  }
+  .tube-name {
+    margin-left: 10px;
+  }
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
+    background-color: govuk-colour('light-grey');
+    outline: none;
+  }
+  svg {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+}
+
+.expanded-content {
+  padding: 10px;
+  background-color: govuk-colour('light-grey');
+}
+// Mobile fist styled
+// right and left border for all the li elements
+
+.tube-list-wrapper {
+  div {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        opacity: 1;
+        vertical-align: middle;
+      }
+      border-right: 1px solid $govuk-border-colour;
+      border-left: 1px solid $govuk-border-colour;
+    }
+    // adding first and last chils ul with border top and bottom
+    &:first-child {
+      ul {
+        border-top: 1px solid $govuk-border-colour;
+      }
+    }
+    // adding first and last chils ul with border top and bottom
+    &:last-child {
+      ul {
+        border-bottom: 1px solid $govuk-border-colour;
+        li {
+          &:last-child {
+            button {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// in tab and desktop it will be a 2 column layout so we are adjusting the borders
+@media screen and (min-width: $small) {
+  ul {
+    li {
+      &:last-child {
+        button {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .tube-list-wrapper {
+    div {
+      &:nth-child(odd) {
+        ul {
+          margin-right: 2rem;
+        }
+      }
+      ul {
+        margin-bottom: 2rem;
+        border: 1px solid $govuk-border-colour;
+      }
+    }
+  }
+}
