@@ -11,7 +11,9 @@ docker-compose [optional, if you are using docker way of running]
 ## Run the application in your local
 
 1. Change the API key in `app\.env`
-   To get the api key - First subscribe the Line API (https://api-portal.tfl.gov.uk/product#product=2357355709892). Then take Primary key from the https://api-portal.tfl.gov.uk/profile
+   - To get the api key
+   1. First subscribe the Line API (https://api-portal.tfl.gov.uk/product#product=2357355709892)
+   2. Then take Primary key from the https://api-portal.tfl.gov.uk/profile
 
 ### Without Docker
 
