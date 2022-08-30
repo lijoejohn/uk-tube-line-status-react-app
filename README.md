@@ -64,3 +64,7 @@ If you want to access it in mobile with the same network http://192.168.1.3:3000
 6. react testing library - Testing APIs for working with React components.
 7. govuk-frontend - GOV.UK Frontend (css utility classes)
 8. jest-axe - for testing accessibility
+
+## Screenshots
+
+![laptop view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/laptop.png?raw=true)
