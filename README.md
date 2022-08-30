@@ -4,9 +4,9 @@ A simple single page application which shows the current tube line status, by co
 
 ## Prerequisites
 
-Nodejs v16.16.0 +
-Yarn globally
-docker-compose [optional, if you are using docker way of running]
+1. Nodejs v16.16.0 +
+2. Yarn globally
+3. docker-compose [optional, if you are using docker way of running]
 
 ## Run the application in your local
 
