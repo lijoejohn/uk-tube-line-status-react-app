@@ -67,20 +67,38 @@ If you want to access it in mobile with the same network http://192.168.1.3:3000
 
 ## Screenshots
 
+### laptop view
+
 ![laptop view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/laptop.png?raw=true)
+
+### tab view
 
 ![tab view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/tab.png?raw=true)
 
+### mobile view
+
 ![mobile view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/mobile.png?raw=true)
+
+### expanded view
 
 ![expanded view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/expanded-view.png?raw=true)
 
+### accessibility check
+
 ![accessibility check](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/accessibility.png?raw=true)
+
+### lighthouse score
 
 ![lighthouse score](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/lighthouse.png?raw=true)
 
+### unit integration and snapshot test
+
 ![unit-test](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/unit-test.png?raw=true)
 
+### test coverage
+
 ![coverage](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/coverage.png?raw=true)
+
+### typescript and lint error check
 
 ![tsc-lint-error](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/tsc-lint-error.png?raw=true)
