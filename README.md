@@ -93,6 +93,10 @@ https://lijo-uk-tube-line.web.app
 
 ![accessibility check](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/accessibility.png?raw=true)
 
+### WCAG Contrast checker
+
+![WCAG Contrast checker](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/color.png?raw=true)
+
 ### lighthouse score
 
 ![lighthouse score](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/lighthouse.png?raw=true)

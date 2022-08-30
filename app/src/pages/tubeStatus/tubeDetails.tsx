@@ -24,6 +24,7 @@ function TubeDetails({ data }: { data: SingleLineStatus }): JSX.Element {
         <span className={`${getColorClass(data.id)} color-code`} />
         <span className="tube-name text">{data.name}</span>
         <Icon
+          aria-label={show ? 'Click to collapse the details' : 'Click to expand the details'}
           data-expanded={show}
           data-testid={`${DOM_ELEMENT_IDS.tube_list_button_svg}-${data.id}`}
           path={!show ? 'M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z' : 'M0 12v1h23v-1h-23z'}
