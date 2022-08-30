@@ -68,3 +68,19 @@ If you want to access it in mobile with the same network http://192.168.1.3:3000
 ## Screenshots
 
 ![laptop view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/laptop.png?raw=true)
+
+![tab view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/tab.png?raw=true)
+
+![mobile view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/mobile.png?raw=true)
+
+![expanded view](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/expanded-view.png?raw=true)
+
+![accessibility check](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/accessibility.png?raw=true)
+
+![lighthouse score](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/lighthouse.png?raw=true)
+
+![unit-test](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/unit-test.png?raw=true)
+
+![coverage](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/coverage.png?raw=true)
+
+![tsc-lint-error](https://github.com/lijoejohn/uk-tube-line-status-react-app/blob/main/screenshots/tsc-lint-error.png?raw=true)
