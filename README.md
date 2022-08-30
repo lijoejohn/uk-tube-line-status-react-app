@@ -25,8 +25,8 @@ https://lijo-uk-tube-line.web.app
 2. `yarn install`
 3. `yarn run dev`
 
-The local dev server will be available on 3000 port
-If you want to access it in mobile with the same network http://192.168.1.3:3000
+- The local dev server will be available on 3000 port
+- If you want to access it in mobile with the same network http://192.168.1.3:3000
 
 ### Docker way
 
